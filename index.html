@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel = "icon" href="web_Icon/favicon.ico">
+    <link rel="icon" href="web_Icon/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="main-body">
-    <div class="calc">
+    <main class="main-body">
+        <div class="calc">
 
-        <!-- Display wrapper holds both the input and the copy button -->
-        <div class="display-wrapper">
-            <input type="text" placeholder="0" id="inputBox">
-            <button id="copyBtn" class="copy-btn" title="Copy result" aria-label="Copy result">📋</button>
+            <!-- Display wrapper holds both the input and the copy button -->
+            <div class="display-wrapper">
+                <input type="text" placeholder="0" id="inputBox">
+                <button id="copyBtn" class="copy-btn" title="Copy result" aria-label="Copy result">📋</button>
+            </div>
+            <div id="preview" class="preview"></div>
+
+            <!-- ✅ MEMORY BUTTONS -->
+            <div class="row">
+                <button class="operator">MC</button>
+                <button class="operator">MR</button>
+                <button class="operator">M+</button>
+                <button class="operator">M-</button>
+            </div>
+
+            <!-- Existing Control Row -->
+            <div class="row" style="grid-template-columns: repeat(5, 1fr);">
+                <button class="operator">AC</button>
+                <button class="operator">DEL</button>
+                <button class="operator">%</button>
+                <button class="operator">√</button>
+                <button class="operator">!</button>
+            </div>
+
+            <div class="row">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">/</button>
+            </div>
+
+            <div class="row">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">*</button>
+            </div>
+
+            <div class="row">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">-</button>
+            </div>
+
+            <div class="row">
+                <button>00</button>
+                <button>0</button>
+                <button>.</button>
+                <button class="operator">+</button>
+            </div>
+
+            <div class="row">
+                <button class="equalbtn">=</button>
+            </div>
         </div>
-        <div id="preview" class="preview"></div>
+    </main>
 
-<!-- ✅ MEMORY BUTTONS -->
-<div class="row">
-    <button class="operator">MC</button>
-    <button class="operator">MR</button>
-    <button class="operator">M+</button>
-    <button class="operator">M-</button>
-</div>
-
-<!-- Existing Control Row -->
-<div class="row">
-    <button class="operator">AC</button>
-    <button class="operator">DEL</button>
-    <button class="operator">√</button>
-    <button class="operator">!</button>
-</div>
-        <div class="row">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">/</button>
-        </div>
-
-        <div class="row">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">*</button>
-        </div>
-
-        <div class="row">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">-</button>
-        </div>
-
-        <div class="row">
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="operator">+</button>
-        </div>
-
-        <div class="row">
-            <button class="equalbtn">=</button>
-        </div>
-    </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
